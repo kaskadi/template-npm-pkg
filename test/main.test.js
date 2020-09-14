@@ -1,7 +1,11 @@
 /* eslint-env mocha */
+const path = require('path')
 const chai = require('chai')
 const { assert } = require('chai')
 chai.should()
+
+// set environment
+require('dotenv').config({ path: path.join(__dirname, '.env') })
 
 // *************
 // Write your tests here
