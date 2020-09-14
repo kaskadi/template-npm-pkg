@@ -4,9 +4,8 @@
 
 **GitHub Actions workflows status**
 
-[![](https://img.shields.io/github/workflow/status/kaskadi/template-npm-pkg/deploy?label=deployed&logo=Amazon%20AWS)](https://github.com/kaskadi/template-npm-pkg/actions?query=workflow%3Adeploy)
+[![](https://img.shields.io/github/workflow/status/kaskadi/template-npm-pkg/publish?label=publish&logo=npm)](https://github.com/kaskadi/template-npm-pkg/actions?query=workflow%3Apublish)
 [![](https://img.shields.io/github/workflow/status/kaskadi/template-npm-pkg/build?label=build&logo=mocha)](https://github.com/kaskadi/template-npm-pkg/actions?query=workflow%3Abuild)
-[![](https://img.shields.io/github/workflow/status/kaskadi/template-npm-pkg/syntax-check?label=syntax-check&logo=serverless)](https://github.com/kaskadi/template-npm-pkg/actions?query=workflow%3Asyntax-check)
 
 **CodeClimate**
 
