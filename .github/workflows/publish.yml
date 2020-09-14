@@ -1,0 +1,26 @@
+name: publish
+on:
+  push:
+    branches:
+      - 'master'
+    paths:
+      - 'main.js'
+      - 'package.json'
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v1
+      with:
+        node-version: 12
+    - name: Install dependencies
+      run: npm i
+    - name: Test
+      run: npm test
+      env:
+        INIT_CLIENT_OPTS: ${{ secrets.INIT_CLIENT_OPTS }}
+    - name: Publish to NPM
+      uses: JS-DevTools/npm-publish@v1
+      with:
+        token: ${{ secrets.NPM_TOKEN }}
