@@ -1,5 +1,3 @@
-:warning: **_Warning_: to update `README.md` you'll have to update the documentation template at [docs/template.md](./docs/template.md) as the main `README.md` file is automatically generated based on this template** :warning:
-
 ![](https://img.shields.io/github/package-json/v/kaskadi/template-npm-pkg)
 ![](https://img.shields.io/badge/code--style-standard-blue)
 ![](https://img.shields.io/github/license/kaskadi/template-npm-pkg?color=blue)
@@ -23,47 +21,29 @@
 
 ****
 
-❌ **This section can be deleted when done with all the preliminary work** ❌
+# Testing
 
-# :computer: Creating a new NPM package from this template :computer:
+`mocha`, `chai` & `standard` are available as dev dependencies.
 
-**Checklist (delete items when done)**
-- create a new repository and choose this repository as template
-- clone the new repository to a local working copy
-- add the new repository to:
-  - _CodeClimate_ ([help](#Add-the-NPM-package-repository-on-CodeClimate))
-  - _LGTM_ ([help](#Add-the-NPM-package-repository-on-LGTM))
-- install all dependencies via `npm i`
-- develop your package and when you will push it to master it'll get deployed if your version is different than the one already on NPM
+A `build` workflow (see [here](./.github/workflows/build.yml)) is running on `pull request` and will execute your test suite before allowing you to merge your PR. It also has a `coverage` job already prepared that you can comment out as soon as your testing is in place and your `REPORTER_ID` is in the repository secrets. This is the ID on _Code Climate_ used for uploading code coverage reports.
 
-**Attention:**
-- if you wish to use kaskadi's CLI tools, make sure to have `kaskadi-cli` installed globally (`npm i -g kaskadi-cli`)
-- for your first package publishing, please publish the package manually via NPM CLI
+****
 
-## Add the NPM package repository on [_CodeClimate_](https://codeclimate.com)
+# Documentation
 
-**Steps:**
-1. log into your dashboard on [_CodeClimate_](https://codeclimate.com/dashboard)
-2. pick the correct organization
-  - kaskadi for closed source projects
-  - Open source otherwise
-3. click on `Add a repository`
-4. once the list of repositories is visible, click on `Add Repo` next to the repository you would like to add on _CodeClimate_
+This repository comes with a `generate-docs` workflow that generates documentation automatically for you using [`JSDOC`](https://jsdoc.app/). It'll check all your `.js` file for `JSDOC`-like comments in order to build its documentation. See [here](https://github.com/kaskadi/action-generate-docs) for more information.
 
-**But, how can I find my reporter ID?**
+If you would like to see the workflow configuration, head [here](./.github/workflows/generate-docs.yml).
 
-1. go into the repository you would like to set test coverage reporting for
-2. click on `Repo Settings` in the top navigation bar
-3. click on `Test coverage` in the menu on the left side
-4. you can now copy the _TEST REPORTER ID_ and use it as secrets (`REPORTER_ID`) in your repository to setup automated test coverage reporting!
+You can configure the template used to generate the action documentation [here](./docs/template.md)
 
-## Add the NPM package repository on [_LGTM_](https://lgtm.com)
+****
 
-1. log into your dashboard on [_LGTM_](https://lgtm.com/dashboard)
-2. review if the repository you would like to add is already tracked
-3. **if the repo is not added automatically**: copy the URL of your repository root and paste it on your _LGTM_ dashboard in the `Follow a project from a repository host` field.
+# Publishing
 
-**Note:** By following a repository, this should setup a watcher on your GitHub account/organization and automatically add any active repositories on your _LGTM_ dashboard. This is why your newly created repository may already be tracked on your _LGTM_ tracker.
+Publishing to NPM is done automatically via a `publish` workflow (see [here](./.github/workflows/publish.yml)). This workflow will run on `push` to `master`. It checks the current published version versus the one in `package.json` and if `package.json` version is different then it publishes to NPM.
+
+**Warning: in order for this workflow to work properly, you'll have to manually publish your package on initial publish.**
 
 ****
 
