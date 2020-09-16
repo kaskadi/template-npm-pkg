@@ -35,7 +35,7 @@ This repository comes with a `generate-docs` workflow that generates documentati
 
 If you would like to see the workflow configuration, head [here](./.github/workflows/generate-docs.yml).
 
-You can configure the template used to generate the action documentation [here](./docs/template.md)
+You can configure the template used to generate the action documentation [here](./docs/template.md).
 
 ****
 
