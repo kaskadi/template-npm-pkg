@@ -1,4 +1,4 @@
-:warning: **_Disclaimer_: to update `README.md` you'll have to update the documentation template at [docs/template.md](./docs/template.md) as the main `README.md` file is automatically generated based on this template** :warning:
+:warning: **_Warning_: to update `README.md` you'll have to update the documentation template at [docs/template.md](./docs/template.md) as the main `README.md` file is automatically generated based on this template** :warning:
 
 ![](https://img.shields.io/github/package-json/v/kaskadi/template-npm-pkg)
 ![](https://img.shields.io/badge/code--style-standard-blue)
