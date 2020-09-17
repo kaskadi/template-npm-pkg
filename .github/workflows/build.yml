@@ -6,7 +6,7 @@ on:
       - 'dev'
     types: [opened, reopened, edited, synchronize]
     paths:
-      - 'main.js'
+      - 'index.js'
       - 'test/**'
       - 'package.json'
 jobs:
