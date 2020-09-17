@@ -6,6 +6,7 @@
 
 [![](https://img.shields.io/github/workflow/status/kaskadi/template-npm-pkg/publish?label=publish&logo=npm)](https://github.com/kaskadi/template-npm-pkg/actions?query=workflow%3Apublish)
 [![](https://img.shields.io/github/workflow/status/kaskadi/template-npm-pkg/build?label=build&logo=mocha)](https://github.com/kaskadi/template-npm-pkg/actions?query=workflow%3Abuild)
+[![](https://img.shields.io/github/workflow/status/kaskadi/template-npm-pkg/generate-docs?label=docs&logo=read-the-docs)](https://github.com/kaskadi/template-npm-pkg/actions?query=workflow%3Agenerate-docs)
 
 **CodeClimate**
 
