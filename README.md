@@ -57,7 +57,11 @@ npm i template-npm-pkg
 
 # Usage
 
+## help
 
+You can use JSDoc comments in your `.js` files to generate automatically documentation for your package via the `generate-docs` workflow.
+
+<!-- LINKS -->
 <!-- automatically generated documentation will be placed here -->
 
 :point_down: **Your documentation here** :point_down:
