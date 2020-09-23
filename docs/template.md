@@ -17,7 +17,7 @@
 
 [![](https://img.shields.io/lgtm/grade/javascript/github/kaskadi/template-npm-pkg?label=code%20quality&logo=LGTM)](https://lgtm.com/projects/g/kaskadi/template-npm-pkg/?mode=list&logo=LGTM)
 
-:point_right: **Badges here** :point_left:
+<!-- You can add badges inside of this section if you'd like -->
 
 ****
 
@@ -47,8 +47,8 @@ Publishing to NPM is done automatically via a `publish` workflow (see [here](./.
 
 ****
 
-<!-- automatically generated documentation will be placed here -->
+<!-- automatically generated documentation will be placed in here -->
 {{>main}}
-<!-- automatically generated documentation will be placed here -->
+<!-- automatically generated documentation will be placed in here -->
 
-:point_down: **Your documentation here** :point_down:
+<!-- You can customize this template as you'd like! -->
