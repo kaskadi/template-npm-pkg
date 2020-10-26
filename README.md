@@ -31,7 +31,7 @@ A `build` workflow (see [here](./.github/workflows/build.yml)) is running on `pu
 
 # Documentation
 
-This repository comes with a `generate-docs` job inside of the `publish` workflow that generates documentation automatically for you using [`JSDOC`](https://jsdoc.app/). It'll check all your `.js` file for `JSDOC`-like comments in order to build its documentation. See [here](https://github.com/kaskadi/action-generate-docs) for more information.
+This repository comes with a `generate-docs` job inside of the `publish` workflow that generates documentation automatically for you using [`JSDOC`](https://jsdoc.app/). It'll check all your `.js` files for `JSDOC`-like comments in order to build its documentation. See [here](https://github.com/kaskadi/action-generate-docs) for more information.
 
 If you would like to see the workflow configuration, head [here](./.github/workflows/publish.yml).
 
