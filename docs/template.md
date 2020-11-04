@@ -4,18 +4,14 @@
 
 **GitHub Actions workflows status**
 
-[![](https://img.shields.io/github/workflow/status/kaskadi/template-npm-pkg/publish?label=publish&logo=npm)](https://github.com/kaskadi/template-npm-pkg/actions?query=workflow%3Apublish)
-[![](https://img.shields.io/github/workflow/status/kaskadi/template-npm-pkg/build?label=build&logo=mocha)](https://github.com/kaskadi/template-npm-pkg/actions?query=workflow%3Abuild)
+[![Build workflow status](https://img.shields.io/github/workflow/status/kaskadi/template-npm-pkg/build?label=build&logo=mocha)](https://github.com/kaskadi/template-npm-pkg/actions?query=workflow%3Abuild)
+[![Publish workflow status](https://img.shields.io/github/workflow/status/kaskadi/template-npm-pkg/publish?label=publish&logo=npm)](https://github.com/kaskadi/template-npm-pkg/actions?query=workflow%3Apublish)
 
 **CodeClimate**
 
 [![](https://img.shields.io/codeclimate/maintainability/kaskadi/template-npm-pkg?label=maintainability&logo=Code%20Climate)](https://codeclimate.com/github/kaskadi/template-npm-pkg)
 [![](https://img.shields.io/codeclimate/tech-debt/kaskadi/template-npm-pkg?label=technical%20debt&logo=Code%20Climate)](https://codeclimate.com/github/kaskadi/template-npm-pkg)
 [![](https://img.shields.io/codeclimate/coverage/kaskadi/template-npm-pkg?label=test%20coverage&logo=Code%20Climate)](https://codeclimate.com/github/kaskadi/template-npm-pkg)
-
-**LGTM**
-
-[![](https://img.shields.io/lgtm/grade/javascript/github/kaskadi/template-npm-pkg?label=code%20quality&logo=LGTM)](https://lgtm.com/projects/g/kaskadi/template-npm-pkg/?mode=list&logo=LGTM)
 
 <!-- You can add badges inside of this section if you'd like -->
 
