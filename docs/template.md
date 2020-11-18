@@ -29,7 +29,7 @@ When creating a repository from this template, an `init` workflow (see [here](./
 
 A `build` workflow (see [here](./.github/workflows/build.yml)) is running on `pull request` and will execute your test suite before allowing you to merge your PR. It also has a `coverage` job already prepared that you can comment out as soon as your testing is in place and your `REPORTER_ID` is in the repository secrets. This is the ID on _Code Climate_ used for uploading code coverage reports.
 
-Beside running your unit tests, this workflow also runs a static code analysis to find any vulnerability in your code. If a vulnerability is found, the workflow will directly fail and a notification will appear in the `Security` tab of your repository.
+Beside running your unit tests, this workflow also runs a static code analysis to find any vulnerability in your code. If a vulnerability is found, a notification will appear in the `Security` tab of your repository.
 
 ****
 
@@ -47,9 +47,9 @@ You can configure the template used to generate the action documentation [here](
 
 Publishing to NPM is done automatically via a `publish` workflow (see [here](./.github/workflows/publish.yml)). This workflow will run on `push`. It checks the currently published version versus the one in `package.json` and if those versions differ then it publishes to NPM.
 
-Before publishing, this workflow also runs a static code analysis to find any vulnerability in your code. If a vulnerability is found, the workflow will directly fail and a notification will appear in the `Security` tab of your repository.
+Before publishing, this workflow also runs a static code analysis to find any vulnerability in your code. If a vulnerability is found, a notification will appear in the `Security` tab of your repository.
 
-Once the static code analysis has been performed, your unit tests will also be ran.
+Beside this analysis, the workflow will run your unit tests right before publishing to make sure that no bugs have been introduced.
 
 **Warning: in order for this workflow to work properly, you'll have to manually publish your package on initial publish.**
 
